@@ -75,7 +75,7 @@ export default {
     async getMenuList() {
       // 发起ajax请求，把请求的结果赋值给data
       const { data: res } = await this.$http.get('menus')
-      console.log(res)
+      // console.log(res)
       // 如果没有拿到数据，就报错
       if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
       // 拿到数据就赋值

@@ -22,9 +22,11 @@ import {
   TableColumn,
   Switch,
   Tooltip,
-  Pagination
+  Pagination,
+  Tag
 } from 'element-ui'
 
+Vue.use(Tag)
 Vue.use(Pagination)
 Vue.use(Tooltip)
 Vue.use(Switch)
