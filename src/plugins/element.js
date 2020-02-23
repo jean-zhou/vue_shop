@@ -23,9 +23,12 @@ import {
   Switch,
   Tooltip,
   Pagination,
-  Tag
+  Tag,
+  Dialog,
+  MessageBox
 } from 'element-ui'
 
+Vue.use(Dialog)
 Vue.use(Tag)
 Vue.use(Pagination)
 Vue.use(Tooltip)
@@ -51,3 +54,5 @@ Vue.use(BreadcrumbItem)
 Vue.use(Card)
 // message组件需要全局挂载
 Vue.prototype.$message = Message
+// confirm要全局注册
+Vue.prototype.$confirm = MessageBox.confirm
